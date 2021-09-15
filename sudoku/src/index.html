@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="index.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+    <div class="wrapper-container">
+        <div class="container">
+            <div class="info">
+                <h1 class="info__title">Sudoku</h1>
+                <hr class="divider">
+                <div class="info__difficulty">
+                    <button href="#" class="info__difficulty-btn btn-active">Easy</button>
+                    <button href="#" class="info__difficulty-btn">Medium</button>
+                    <button href="#" class="info__difficulty-btn">Hard</button>
+                </div>
+                <br>
+                <div class="info__difficulty">
+                    <button href="#" class="info__difficulty-btn">Expert</button>
+                    <button href="#" class="info__difficulty-btn">Insane</button>
+                    <button href="#" class="info__difficulty-btn">Inhuman</button>
+                </div>
+                <hr class="divider">
+                <div class="info__instruction">
+                    <h3 class="info__instruction-heading">
+                        Select Difficulty & Hit Start
+                    </h3>
+                </div>
+                <hr class="divider">
+                <button onclick="generateBoard()"  class="btn info__start">Start</button>
+            </div>
+            <div class="board">
+        
+            </div>
+            <div class="results">
+                <div class="results__timer">
+                    <div class="results__timer-container">
+                        <span id="mins">00</span><span style="transform: translateY(-5px);">:</span><span id="seconds">00</span>
+                    </div>
+                </div>
+                <hr class="divider">
+                <div class="results__moves">
+                    <div class="results__moves-box">
+                        <div class="results__moves-output-1">
+                            <span class="results__moves-output-label">
+                                0
+                            </span>
+                        </div>
+                        <span class="results__moves-label">
+                            Correct Moves
+                        </span>
+                    </div>
+                    <div class="results__moves-box">
+                        <div class="results__moves-output-2">
+                            <span class="results__moves-output-label">
+                                0
+                            </span>
+                        </div>
+                        <span class="results__moves-label">
+                            Wrong Moves
+                        </span>
+                    </div>
+                </div>
+                <hr class="divider">
+                <div class="results__grade">
+                    <div class="results__grade-overlay"></div>
+                    <div class="results__grade-percent">
+                        100%
+                    </div>
+                    <div class="results__grade-letter">
+                        A
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="win">
+            <div class="win__overlay">
+
+            </div>
+            <div class="win__close">
+                <button class="win__close-btn" onclick="closeOverlay()">&#x2715</button>
+            </div>
+        </div>
+    </div>
+    <script src="sudoku.js"></script>
+</body>
+</html>
