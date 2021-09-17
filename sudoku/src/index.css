@@ -76,7 +76,6 @@ body {
     transform: scale(1); } }
 
 .wrapper-container {
-  padding: 20px;
   resize: both;
   position: relative;
   width: 100%;
@@ -319,9 +318,13 @@ body {
     position: absolute;
     width: 80%;
     height: 80vh;
+    z-index: 3000;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%); }
+    transform: translate(-50%, -50%); 
+    border-radius: 10px;
+    border: 5px solid #e0dada;
+  }
   .win__close {
     position: absolute;
     top: 15px;

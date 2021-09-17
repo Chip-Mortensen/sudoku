@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="index.css">
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>window.$ = window.jQuery = require('jquery');</script>
 </head>
 <body>
     <div class="wrapper-container">
@@ -27,7 +27,7 @@
                 <hr class="divider">
                 <div class="info__instruction">
                     <h3 class="info__instruction-heading">
-                        Select Difficulty & Hit Start
+                        
                     </h3>
                 </div>
                 <hr class="divider">
@@ -77,15 +77,16 @@
                 </div>
             </div>
         </div>
-        <div class="win">
-            <div class="win__overlay">
+    </div>
+    <div class="win">
+        <div class="win__overlay">
 
-            </div>
-            <div class="win__close">
-                <button class="win__close-btn" onclick="closeOverlay()">&#x2715</button>
-            </div>
+        </div>
+        <div class="win__close">
+            <button class="win__close-btn" onclick="closeOverlay()">&#x2715</button>
         </div>
     </div>
+    <script src="scripts.js"></script>
     <script src="sudoku.js"></script>
 </body>
 </html>
